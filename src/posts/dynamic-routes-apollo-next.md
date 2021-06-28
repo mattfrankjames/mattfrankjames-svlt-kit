@@ -4,6 +4,10 @@ slug: dynamic-routes-apollo-next
 date: '2020-03-02T22:12:03.284Z'
 ---
 
+# {title}
+
+<hr>
+
 Let's say your working on a headless ecommerce site and you need to put together a flexble component that can reference different product ids to populate a specific product page. Your store has thousands of products, so you're going to need something flexible to handle the volume.
 
 Luckily, Next JS makes this process pretty straight forward. First, set up your links using both the `as` and `href` props.

@@ -1,6 +1,6 @@
 <script context="module">
   export async function load() {
-    const posts = import.meta.globEager('../../posts/*.md');
+    const posts = import.meta.globEager('../posts/*.md');
     const postsList = Object.values(posts);
     const postsMeta = postsList.map(post => {
       return post.metadata
@@ -167,9 +167,7 @@
           {#if index}
             <hr />
           {/if}
-          <h2><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></h2>
-          <p>{post.excerpt}</p>
-          <div class="post-item-footer"><span class="post-item-date">— {post.printDate}</span></div>
+          <h2><a rel="prefetch" href="posts/{post.slug}">{post.title}</a></h2>
         </div>
       {/if}
     {/each}
